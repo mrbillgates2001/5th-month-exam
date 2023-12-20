@@ -97,6 +97,8 @@ header {
 			margin: 68px 0;
 		}
 		form {
+			display: flex;
+			flex-direction: column;
 			input {
 				width: 768px;
 				height: 76px;
@@ -115,16 +117,17 @@ header {
 				font-weight: 400;
 				line-height: 28px; /* 175% */
 			}
+			.regForm {
+				width: 768px;
+				height: 64px;
+				background: var(--Yellow, #ffbb00);
+				margin: 74px 0 158px 0;
+				border: 1px solid transparent;
+				&:hover {
+					background-color: #ffd050;
+				}
+			}
 		}
-		button {
-			width: 768px;
-			height: 64px;
-			flex-shrink: 0;
-			background: var(--Yellow, #ffd050);
-            margin: 74px 0 158px 0;
-            border: 1px solid transparent;
-		}
-        
 	}
 }
 
